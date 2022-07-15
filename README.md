@@ -1,4 +1,11 @@
 # MyProject
 
-# 서버 실행
-# python -m uvicorn main:app --reload
+### How to Run
+
+```bash
+python -m uvicorn main:app --reload
+```
+# 
+
+
+
