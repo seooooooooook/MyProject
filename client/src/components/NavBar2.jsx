@@ -21,18 +21,17 @@ const Nav = styled.div`
   }
 `;
 
-const clickNavMenu = (e: MouseEvent) => {
-  const main = document.getElementsByClassName(
-    "main"
-  ) as HTMLCollectionOf<HTMLElement>;
-  const about = document.getElementsByClassName(
-    "about"
-  ) as HTMLCollectionOf<HTMLElement>;
-  console.log(main[0].offsetTop, about[0].offsetTop);
-};
-
 const Navbar = () => {
   const navigate = useNavigate();
+  const clickNavMenu = (e) => {
+    const target = e.target;
+    const main = document.getElementsByClassName("main")[0].offsetTop;
+    const about = document.getElementsByClassName("about")[0].offsetTop;
+    const team = document.getElementsByClassName("team")[0].offsetTop;
+
+    console.log("sdfsdf");
+    console.log(target);
+  };
 
   return (
     <Nav>
@@ -46,20 +45,8 @@ const Navbar = () => {
       </div>
       <div className="navMenu">
         <ul>
-          <li
-            onClick={() => {
-              navigate("/");
-            }}
-          >
-            About Us
-          </li>
-          <li
-            onClick={() => {
-              navigate("/");
-            }}
-          >
-            Team
-          </li>
+          <li onClick={clickNavMenu}>About Us</li>
+          <li onClick={clickNavMenu}>Team</li>
           <li
             onClick={() => {
               navigate("/");
