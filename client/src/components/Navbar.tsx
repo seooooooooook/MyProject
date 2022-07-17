@@ -20,7 +20,8 @@ const Nav = styled.div`
     }
   }
 `;
-const main = document.getElementsByClassName;
+const main = document.getElementsByClassName("main");
+console.log(main);
 const Navbar = () => {
   const navigate = useNavigate();
   return (
