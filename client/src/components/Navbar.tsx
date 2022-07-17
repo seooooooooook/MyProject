@@ -20,20 +20,9 @@ const Nav = styled.div`
     }
   }
 `;
-
-const clickNavMenu = (e: MouseEvent) => {
-  const main = document.getElementsByClassName(
-    "main"
-  ) as HTMLCollectionOf<HTMLElement>;
-  const about = document.getElementsByClassName(
-    "about"
-  ) as HTMLCollectionOf<HTMLElement>;
-  console.log(main[0].offsetTop, about[0].offsetTop);
-};
-
+const main = document.getElementsByClassName;
 const Navbar = () => {
   const navigate = useNavigate();
-
   return (
     <Nav>
       <div
