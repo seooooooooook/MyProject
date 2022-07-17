@@ -8,6 +8,8 @@ import Detail from "./pages/Detail";
 function App() {
   return (
     <div className="App">
+<<<<<<< Updated upstream
+=======
       <Router>
         <Navbar />
         <Routes>
@@ -15,6 +17,7 @@ function App() {
           <Route path="/detail" element={<Detail />}></Route>
         </Routes>
       </Router>
+>>>>>>> Stashed changes
     </div>
   );
 }
